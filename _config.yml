@@ -78,7 +78,7 @@ theme: hexo-theme-next-5.1.1
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/linjunjj/linjunblog.git
+  repo: https://github.com/linjunjj/linjunjj.git
   branch: master
 server:
   port: 6700
