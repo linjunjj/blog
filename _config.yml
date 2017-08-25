@@ -5,9 +5,9 @@
 # Site
 title: 林俊的博客
 subtitle: 一次偶然的成功，比一次必然的失败更可怕
-description:程序员之所以犯错误，不是因为他们不懂，而是因为他们自以为什么都懂!
+description: 程序员之所以犯错误，不是因为他们不懂，而是因为他们自以为什么都懂!
 author: 林俊
-language:zh-Hans
+language:
 timezone:
 
 # URL
@@ -78,5 +78,9 @@ theme: hexo-theme-next-5.1.1
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/FutureWL/FutureWL.github.io.git
+  repo: https://github.com/linjunjj/linjunblog.git
   branch: master
+server:
+  port: 6700
+  compress: true
+  header: true
