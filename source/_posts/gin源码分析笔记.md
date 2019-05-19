@@ -31,4 +31,22 @@ WriteContentType 写入的内容类型
 
 writeContentType验证写入数据类型
 
-Render有8中需要处理的数据类型
+Render有8中需要处理的数据类型 
+
+> data  
+```angular2html
+type Data struct {
+	ContentType string
+	Data        []byte
+}
+```
+> 
+html
+json  json.Marshal(r.Data)
+mgspack  
+redirect
+test
+xml
+yaml
+
+
