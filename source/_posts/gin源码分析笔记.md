@@ -50,3 +50,13 @@ xml
 yaml
 
 
+ginS.go
+
+描述：
+
+引用了sync.one锁
+var internalEngine *gin.Engine
+
+
+方法有
+> LoadHTMLGlob    LoadHTMLFile SetHTMLTemplate NoRoute NoMethod 
