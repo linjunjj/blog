@@ -60,3 +60,34 @@ var internalEngine *gin.Engine
 
 方法有
 > LoadHTMLGlob    LoadHTMLFile SetHTMLTemplate NoRoute NoMethod 
+
+
+binding.go
+
+> 绑定描述绑定请求中存在的数据（如JSON请求主体、查询参数或表单发布）需要实现的接口。
+```angular2html
+type Binding interface {
+	Name() string
+	Bind(*http.Request, interface{}) error
+}
+```
+
+
+```angular2html
+type StructValidator interface {
+
+	ValidateStruct(interface{}) error
+
+	Engine() interface{}
+}
+```
+
+
+default_validator.go
+
+```angular2html
+type defaultValidator struct {
+	once     sync.Once
+	validate *validator.Validate
+}
+```
