@@ -3,10 +3,10 @@ echo "开始"
 hexo clean
 echo "生成"
 hexo g
-echo "部署"
-hexo d
 echo "添加CHINA文件"
 echo "www.linjun.ltd" > public/CNAME
+echo "部署"
+hexo d
 echo "添加文件"
 git add *
 echo "提交"
