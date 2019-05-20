@@ -63,6 +63,8 @@ var internalEngine *gin.Engine
 
 
 binding.go
+Default方法 选择数据类型
+
 
 > 绑定描述绑定请求中存在的数据（如JSON请求主体、查询参数或表单发布）需要实现的接口。
 ```angular2html
@@ -91,3 +93,12 @@ type defaultValidator struct {
 	validate *validator.Validate
 }
 ```
+
+方法： kindOfData  返回数值类型
+lazyinit -> Engine  ValidateStruct方法
+
+
+gin包中的
+
+utils.go
+
