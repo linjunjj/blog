@@ -130,3 +130,79 @@ type Context struct {
 
 ```
 
+
+tree.go文件
+主要功能是 
+树的基本操作
+
+```angular2html
+type node struct {
+	path      string
+	indices   string
+	children  []*node
+	handlers  HandlersChain
+	priority  uint32
+	nType     nodeType
+	maxParams uint8
+	wildChild bool
+}
+```
+方法 incrementChildPrio
+
+
+context.go
+   ```angular2html
+type Context struct {
+	writermem responseWriter
+	Request   *http.Request
+	Writer    ResponseWriter
+
+	Params   Params
+	handlers HandlersChain
+	index    int8
+
+	engine *Engine
+
+	// Keys is a key/value pair exclusively for the context of each request.
+	Keys map[string]interface{}
+
+	// Errors is a list of errors attached to all the handlers/middlewares who used this context.
+	Errors errorMsgs
+
+	// Accepted defines a list of manually accepted formats for content negotiation.
+	Accepted []string
+}
+```
+
+
+```golang
+
+type Engine struct {
+	RouterGroup.
+	RedirectTrailingSlash bool
+
+
+	RedirectFixedPath bool
+
+	HandleMethodNotAllowed bool
+	ForwardedByClientIP    bool
+
+	AppEngine bool
+
+	UseRawPath bool
+	UnescapePathValues bool
+	MaxMultipartMemory int64
+
+	delims           render.Delims
+	secureJsonPrefix string
+	HTMLRender       render.HTMLRender
+	FuncMap          template.FuncMap
+	allNoRoute       HandlersChain
+	allNoMethod      HandlersChain
+	noRoute          HandlersChain
+	noMethod         HandlersChain
+	pool             sync.Pool
+	trees            methodTrees
+}
+```
+
