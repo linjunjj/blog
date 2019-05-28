@@ -102,8 +102,14 @@ gin包中的
 
 utils.go
 
-
-
+方法
+Bind(val interface{}) HandlerFunc()
+WraF(f http.HandlerFunc) HandlerFunc()
+WraH(f http.Handler) HandlerFunc
+MarshalXML
+parseAccept
+joinPaths
+resolveAddress
 
 包含这个
 ```angular2html
@@ -173,6 +179,16 @@ type Context struct {
 	Accepted []string
 }
 ```
+
+功能有
+reset()
+Copy()
+HandlerName()
+Handler()
+Next()
+
+
+
 
 
 ```golang
