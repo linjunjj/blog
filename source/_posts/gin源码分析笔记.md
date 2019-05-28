@@ -186,7 +186,11 @@ Copy()
 HandlerName()
 Handler()
 Next()
-
+IsAborted()
+Abort()
+AbortWithStatus(code int)
+(c *Context) AbortWithStatusJSON(code int, jsonObj interface{})
+(c *Context) AbortWithError(code int, err error) *Error
 
 
 
