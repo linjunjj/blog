@@ -194,7 +194,7 @@ AbortWithStatus(code int)
 
 
 
-
+中间
 ```golang
 
 type Engine struct {
@@ -225,4 +225,33 @@ type Engine struct {
 	trees            methodTrees
 }
 ```
+
+
+mode.go 
+
+```dart
+const (
+	DebugMode   = "debug"
+	ReleaseMode = "release"
+	TestMode    = "test"
+)
+const (
+	debugCode = iota
+	releaseCode
+	testCode
+)
+
+```
+
+```dart
+func Mode() string {
+	return modeName
+}
+```
+
+path.go
+含有这些方法: cleanPath()， bufApp().
+
+
+
 
