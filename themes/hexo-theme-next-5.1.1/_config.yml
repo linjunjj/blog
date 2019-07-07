@@ -38,11 +38,11 @@ seo: false
 # When running the site in a subdirectory (e.g. domain.tld/blog), remove the leading slash (/archives -> archives)
 menu:
   home: /
-#  timeline: /timeline
+  timeline: /timeline
 #  java: /java
 #  javaweb: /javaweb
 #  android: /android
-#  golang: /golang
+  golang: /golang
 #  tensorflow: /tensorflow
 #  inspiration: /inspiration
 #  about: /about
