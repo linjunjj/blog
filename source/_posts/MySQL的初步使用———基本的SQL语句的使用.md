@@ -1,7 +1,7 @@
 ---
 title: MySQL的初步使用———基本的SQL语句的使用
 date: 2017-08-25 10:01:53
-tags: mysql
+tags: 
 ---
    基本的Sql语句的，分为3种，**DDL**，Data Definition Language 数据库定义语言） ，DML，（Data Manipulation Language 数据操纵语言），DCL，（Data Control Language 数据库控制语言）。
      
