@@ -45,7 +45,7 @@ menu:
   golang: /golang
 #  tensorflow: /tensorflow
 #  inspiration: /inspiration
-#  about: /about
+  about: /about
   #sitemap: /sitemap.xml
   #commonweal: /404.html
 
